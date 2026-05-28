@@ -103,3 +103,15 @@ $(document).ready(function() {
     resultDiv.html(htmlContent).fadeIn(500);
   });
 });
+
+// Úsh sızıq basılǵanda menyudi ashiw hám jabıw
+document.addEventListener('DOMContentLoaded', function() {
+    const barsBtn = document.querySelector('.bars-btn');
+    const headerMenu = document.querySelector('.header-items');
+
+    if (barsBtn && headerMenu) {
+        barsBtn.addEventListener('click', function() {
+            headerMenu.classList.toggle('active');
+        });
+    }
+});

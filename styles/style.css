@@ -694,7 +694,7 @@ textarea.form-control {
 }
 
 .submit-btn {
-  background: #3498db;
+  background: #0056b3;
   border: 0;
   padding: 12px 40px;
   color: #fff;
@@ -781,7 +781,7 @@ textarea.form-control {
 }
 
 .ai-btn:hover {
-    background: var(--ligth-blue);
+    background: #2980b9;
 }
 
 .ai-btn:active {
@@ -934,7 +934,7 @@ textarea.form-control {
 
 /* ========================== @media ========================== */
 
-/* 1. Planshetlar va kichik noutbuklar uchun (Ekran o'lchami 1000px dan kichrayganda) */
+/* 1. Planshetler hám kishi noutbuklar ushın (Ekran ólshemi 1000px ten kishi bolǵanda) */
 @media (max-width: 1000px) {
   .header-items, .header-icons {
     display: none; /* Kompyuter menyusini yashiramiz (JS dagi bars-btn ishlashi uchun) */
@@ -953,26 +953,43 @@ textarea.form-control {
   }
 }
 
-/* 2. Mobil telefonlar uchun (Ekran o'lchami 600px dan kichrayganda) */
+/* 2. Mobil telefonlar ushın (Ekran ólshemi 600px tan kishi bolǵanda) */
 @media (max-width: 600px) {
-  .logo-link {
-    font-size: 22px; /* Logotip shriftini biroz kichraytiramiz */
+  .header-items {
+    display: none; 
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; 
+    flex-direction: column !important; 
+    padding: 20px 0 !important;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
   }
-  .banner-title {
-    font-size: 28px; /* Asosiy sarlavhani telefon ekraniga moslaymiz */
+
+  /* JavaScript túyme basılǵanda usı 'active' klassın qosadı hám header siltemeleri kórinedi. */
+  .header-items.active {
+    display: flex !important;
   }
-  .banner-title-2 {
-    font-size: 18px;
+
+  .header-items li {
+    margin: 12px 0 !important;
+    text-align: center;
+    width: 100%;
   }
-  .about-block__items {
-    grid-template-columns: 1fr; /* Telefonlarda hamma narsa 1 qator bo'lib ustma-ust tushadi */
+
+  .header-items li a {
+    font-size: 18px !important;
+    color: #000000 !important; 
+    display: block;
+    padding: 10px 0;
+    font-weight: 500;
+    transition: 0.3s;
   }
-  .result-block_items {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .comment-form .form-group-top {
-    flex-direction: column; /* Ism va familiya kiritish oynalari ham ustma-ust tushadi */
-    gap: 15px;
+
+  .header-items li a:hover {
+    color: var(--light-blue) !important;
+    background-color: #f5f5f5;
   }
 }
