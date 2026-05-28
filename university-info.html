@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitet maǵlıwmatları</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        .info-container { padding: 50px 0; font-family: 'Open Sans', sans-serif; }
+        .info-flex { display: flex; gap: 40px; align-items: start; }
+        .info-image img { width: 100%; max-width: 600px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .info-content { flex: 1; }
+        .info-content h1 { color: #0563bb; font-size: 36px; margin-bottom: 10px; }
+        .info-content .location { color: #777; font-style: italic; margin-bottom: 20px; display: block; }
+        .info-content p { line-height: 1.8; color: #444; font-size: 16px; }
+        .back-btn { display: inline-block; margin-top: 30px; padding: 10px 25px; background: #0563bb; color: #fff; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <section class="info-container">
+        <div class="container">
+            <div class="info-flex">
+                <div class="info-image">
+                    <img id="displayImg" src="" alt="University Image">
+                </div>
+                <div class="info-content">
+                    <h1 id="displayName">Universitet ati</h1>
+                    <span class="location" id="displayLoc"><i class="fa fa-map-marker"></i> Lokatciya</span>
+                    <p id="displayDesc">Universitet sipatlaması usi jerde payda boladı...</p>
+                    <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i> Arqaǵa qaytiw</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Bet júklengende localStorage dan maǵlıwmatlardı alıw
+        window.onload = function() {
+            const name = localStorage.getItem('uniName') || "Maǵlıwmat tabilmadi";
+            const loc = localStorage.getItem('uniLoc') || "Belgisiz";
+            const img = localStorage.getItem('uniImg') || "./images/default.jpg";
+            const desc = localStorage.getItem('uniDesc') || "Bul universitet haqqında tolıq maǵlıwmat tez arada qosıladı";
+
+            document.getElementById('displayName').innerText = name;
+            document.getElementById('displayLoc').innerHTML = '<i class="fa fa-map-marker"></i> ' + loc;
+            document.getElementById('displayImg').src = img;
+            document.getElementById('displayDesc').innerText = desc;
+        }
+    </script>
+</body>
+</html>
