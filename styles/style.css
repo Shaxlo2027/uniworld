@@ -1030,6 +1030,20 @@ textarea.form-control {
     font-size: 15px !important;
     background-color: #f7f7f7 !important;
     color: #555555 !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+
+  /* Úsh sızıq knopkasin telefon ekranında kórsetiw */
+  .bars-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: none !important;
+    border: none !important;
+    font-size: 26px !important;
+    color: #333333 !important;
+    cursor: pointer;
+    padding: 5px !important;
   }
 
   /* Section Banner */
