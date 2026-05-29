@@ -1001,37 +1001,35 @@ textarea.form-control {
   }
 
   .header-items li {
-    margin: 12px 0 !important;
+    margin: 0 !important; 
     text-align: center;
     width: 100%;
+    position: relative;
   }
 
   .header-items li a {
     color: #333333 !important;
-    font-size: 18px;
+    font-size: 16px !important;
     display: block;
-  }
-
-  /* Sociallıq tarmaq ikonkaları telefonda jasırıladı yamasa tómenge túsedi */
-  .header-icons {
-    display: none !important; 
-  }
-
-  /* Telefonda Menyudi kórsetiw */
-  .bars-btn {
-    display: block !important;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+    padding: 12px 0 !important;
+    border-bottom: 1px solid #f0f0f0; 
   }
 
   /* Drop Down */
   .drop-items, .deep-drop-down {
     position: static !important;
     box-shadow: none !important;
-    padding-left: 20px !important;
-    background-color: #f9f9f9 !important;
+    padding: 0 !important;
+    background-color: #f9f9f9 !important; 
+    border: none !important;
+  }
+
+  /* Ishki menyu siltemeleri biraz kishirek hám shette jaylasadı */
+  .drop-items li a, .deep-drop-down li a {
+    padding: 10px 0 10px 20px !important;
+    font-size: 15px !important;
+    background-color: #f7f7f7 !important;
+    color: #555555 !important;
   }
 
   /* Section Banner */
@@ -1104,10 +1102,5 @@ textarea.form-control {
   .slick-slide div {
     white-space: normal !important; /* Tekstti qaptal tárepke sozıwdı toqtatadı */
     word-break: break-word !important;
-  }
-
-  /* Kontakt bólimi */
-  #contact .container {
-    text-align: center;
   }
 }
