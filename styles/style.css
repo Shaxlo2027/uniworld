@@ -977,51 +977,43 @@ textarea.form-control {
     align-items: center;
   }
 
-  /* Telefon formatında menyu dizimin ústi-ústine jasırıw */
-  .header-menu {
-    position: static;
-  }
-
+  /* Telefon ekranındaǵı header ishindegi tiykarǵı menyu (basında jasırın turadı) */
   .header-items {
-    display: none; 
+    display: none !important; 
     position: absolute;
-    top: 100%;
+    top: 60px; 
     left: 0;
     width: 100%;
-    background-color: #ffffff;
-    flex-direction: column !important;
+    background-color: #ffffff; 
+    flex-direction: column !important; 
     padding: 20px 0 !important;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
+    z-index: 1000;
   }
 
-  /* JavaScript arqalı menyu ashılǵanda isleytuǵın klass */
+  /* JavaScript knopka basılǵanda usı 'active' klassın qosadı hám header linkleri kórinedi. */
   .header-items.active {
     display: flex !important;
   }
 
   .header-items li {
-    margin: 0 !important; 
+    margin: 12px 0 !important;
     text-align: center;
     width: 100%;
-    position: relative;
   }
 
   .header-items li a {
-    color: #333333 !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
+    color: #000000 !important; 
     display: block;
-    padding: 12px 0 !important;
-    border-bottom: 1px solid #f0f0f0; 
+    padding: 10px 0;
+    font-weight: 500;
+    transition: 0.3s;
   }
 
-  /* Drop Down */
-  .drop-items, .deep-drop-down {
-    position: static !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    background-color: #f9f9f9 !important; 
-    border: none !important;
+  .header-items li a:hover {
+    color: var(--light-blue) !important;
+    background-color: #f5f5f5;
   }
 
   /* Úsh sızıq knopkasin telefon ekranında kórsetiw */
