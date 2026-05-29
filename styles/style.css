@@ -1024,15 +1024,6 @@ textarea.form-control {
     border: none !important;
   }
 
-  /* Ishki menyu siltemeleri biraz kishirek hám shette jaylasadı */
-  .drop-items li a, .deep-drop-down li a {
-    padding: 10px 0 10px 20px !important;
-    font-size: 15px !important;
-    background-color: #f7f7f7 !important;
-    color: #555555 !important;
-    border-bottom: 1px solid #e0e0e0 !important;
-  }
-
   /* Úsh sızıq knopkasin telefon ekranında kórsetiw */
   .bars-btn {
     display: flex !important;
