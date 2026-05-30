@@ -1171,12 +1171,75 @@ textarea.form-control {
   }
 
   /* Kommentariya bólimi */
-  .slick-slide {
-    display: flex !important;
+  .slider-items {
+    padding: 0 10px !important;
+  }
+
+  .slider-item {
+    padding: 10px !important; 
+  }
+
+  .slider-item__inner {
+    padding: 20px !important;
+    min-height: auto !important; 
+  }
+
+  .slider-item__info {
+    font-size: 14px !important; 
+    line-height: 1.5 !important;
+  }
+
+  /* Jasalma intellekt bólimi --- */
+  .ai-predictor-container {
+    width: 100% !important;
+    max-width: 100% !important; 
+    padding: 20px 15px !important;
+    margin: 20px auto !important;
+    box-sizing: border-box !important;
+    border-radius: 8px !important;
+  }
+
+  .ai-predictor-title {
+    font-size: 20px !important; 
+    text-align: center;
+  }
+
+  .ai-predictor-desc {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    text-align: center;
+    margin-bottom: 20px !important;
+  }
+
+  .ai-input-group {
+    margin-bottom: 15px !important;
+  }
+
+  .ai-label {
+    font-size: 14px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .ai-select, 
+  .ai-input {
+    font-size: 14px !important;
+    padding: 10px !important; 
+    height: auto !important;
+  }
+
+  .ai-btn {
+    width: 100% !important; 
+    padding: 12px !important;
+    font-size: 16px !important;
+  }
+
+  .ai-result-box {
+    padding: 15px !important;
+    font-size: 14px !important;
+    margin-top: 20px !important;
   }
   
-  .slick-slide div {
-    white-space: normal !important; /* Tekstti qaptal tárepke sozıwdı toqtatadı */
-    word-break: break-word !important;
+  .ai-result-box ul {
+    padding-left: 10px !important;
   }
 }
