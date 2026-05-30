@@ -594,54 +594,94 @@ html {
     padding: 20px 0px;
 }
 
+.slider-items .slick-track {
+  display: flex !important;
+}
+
 .slider-item {
-    padding: 20px;
+  padding: 20px;
+  height: auto !important;
+  display: flex !important;
 }
 
 .slider-item__inner {
+  position: relative;
+  width: 100%;
+  height: 350px;
   background-color: white;
   box-shadow: 0px 0px 12px rgba(63, 63, 63, 0.2);
   text-align: center;
-  padding: 20px 30px;
-  border-radius: 2px;
+  padding: 35px 20px 20px 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .slider-item__info {
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 15px;
+  flex-grow: 1;
+  overflow-y: auto; 
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  font-style: italic;
+  
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.slider-item__person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: auto; 
+  width: 100%;
 }
 
 .slider-item__person .img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    overflow: hidden;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.slider-item__person .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .person-name {
-    font-size: 18px;
-    margin: 7px 0px;
+  font-size: 18px;
+  margin: 7px 0px;
+  font-weight: bold;
+  color: #333;
 }
 
 .slick-dots {
-    display: flex !important;
-    gap: 10px !important;
-    justify-content: center !important;
+  display: flex !important;
+  gap: 10px !important;
+  justify-content: center !important;
 }
 
 .slick-dots li button {
-    display: none !important;
+  display: none !important;
 }
 
 .slick-dots li {
-    margin: 0px;
-    padding: 0px;
-    width: 13px !important;
-    height: 13px !important;
-    border: 1px solid #0a6bac;
-    background-color: transparent;
-    border-radius: 50%;
+  margin: 0px;
+  padding: 0px;
+  width: 13px !important;
+  height: 13px !important;
+  border: 1px solid #0a6bac;
+  background-color: transparent;
+  border-radius: 50%;
 }
 
 .slick-dots li.slick-active{
@@ -709,92 +749,131 @@ textarea.form-control {
   background: #2980b9;
 }
 
-/* ========================== AI Universitet saylaw blogi ========================== */
+.delete-comment-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: none;
+  color: #ccc;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.delete-comment-btn:hover {
+  color: #888;
+}
+
+.letter-avatar {
+  width: 100%;
+  height: 100%;
+  background-color: #0a6bac; 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px; 
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50%;
+  user-select: none;
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================== AI Universitet tańlaw ========================== */
 
 .ai-predictor-container {
-    max-width: 500px;
-    margin: 10px auto 40px auto; 
-    padding: 25px;
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    font-family: 'Poppins', sans-serif;
-    border: 2px solid var(--ligth-blue);
-    box-sizing: border-box;
+  max-width: 500px;
+  margin: 40px auto; 
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid var(--ligth-blue);
 }
 
 .ai-predictor-title {
-    text-align: center;
-    color: #333;
-    margin-bottom: 15px;
-    font-size: 22px;
-    font-weight: 600;
+  text-align: center;
+  color: #0a6bac;
+  margin-bottom: 10px;
+  font-size: 24px;
 }
 
 .ai-predictor-desc {
-    text-align: center;
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 20px;
-    line-height: 1.5;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 .ai-input-group {
-    margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .ai-label {
-    display: block;
-    margin-bottom: 6px;
-    color: #444;
-    font-weight: 500;
-    font-size: 15px;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .ai-select {
-    width: 100%;
-    padding: 11px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    background-color: #fff;
-    transition: border-color 0.3s;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #444;
+  outline: none;
+  background-color: #f9f9f9;
+  transition: all 0.3s;
 }
 
 .ai-select:focus {
-    border-color: var(--ligth-blue);
+  border-color: var(--ligth-blue);
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(10, 107, 172, 0.2);
 }
 
 .ai-btn {
-    width: 100%;
-    background: #0056b3;
-    color: white;
-    border: none;
-    padding: 13px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.1s;
-    margin-top: 5px;
+  width: 100%;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
 }
 
 .ai-btn:hover {
-    background: #2980b9;
+  background: #2980b9;
 }
 
 .ai-btn:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .ai-result-box {
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    display: none;
-    font-size: 15px;
-    line-height: 1.6;
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 6px;
+  display: none;
+  background-color: #f4f9fc;
+  border-left: 5px solid #0a6bac;
 }
 
 /* ========================== section-contact ========================== */
@@ -1092,7 +1171,7 @@ textarea.form-control {
   }
 
   /* Kommentariya bólimi */
-  .slick-slide, .slick-track {
+  .slick-slide {
     display: flex !important;
   }
   
