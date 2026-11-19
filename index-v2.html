@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="kaa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UniWorld — global education and student ecosystem.">
+  <title>UniWorld — Your Education. Your Opportunities. Your World.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/home-v2.css">
+  <script src="./js/home-v2.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="UniWorld home"><span class="brand-mark">U</span><span>UniWorld<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="./campus.html" data-i18n="navCampus">Campus</a>
+        <a href="./discover.html" data-i18n="navDiscover">Discover</a>
+        <a href="./opportunities.html" data-i18n="navOpportunities">Opportunities</a>
+        <a href="./assistant.html" data-i18n="navGuide">AI Assistant</a>
+      </nav>
+      <label class="language-picker"><span class="sr-only">Language</span>
+        <select id="languageSelect" aria-label="Select language">
+          <option value="kaa">Qaraqalpaqsha</option><option value="uz">O‘zbekcha</option><option value="en">English</option><option value="ru">Русский</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="eyebrow">GLOBAL EDUCATION & STUDENT ECOSYSTEM</span></div>
+        <h1 data-i18n="heroTitle">Your education.<br><span>Your opportunities.</span><br>Your world.</h1>
+        <p class="hero-copy" data-i18n="heroCopy">A place where student life meets global opportunities. Learn, connect, discover what comes next.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="./campus.html" data-i18n="exploreCampus">Explore Campus <span>↗</span></a>
+          <a class="button button-quiet" href="./discover.html" data-i18n="discoverMore">Discover opportunities</a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span data-i18n="heroNote">Built around students. Open to the world.</span></div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="visual-core"><span class="core-symbol">U</span><span class="core-label">UNI<br>WORLD</span></div>
+        <div class="float-card card-campus"><span class="float-icon">⌂</span><span><b>Campus</b><small data-i18n="cardCampus">Student community</small></span></div>
+        <div class="float-card card-global"><span class="float-icon">◎</span><span><b>Discover</b><small data-i18n="cardDiscover">Global pathways</small></span></div>
+        <div class="float-card card-growth"><span class="float-icon">↗</span><span><b>Opportunities</b><small data-i18n="cardOpportunities">Your next step</small></span></div>
+      </div>
+    </section>
+
+    <section class="intro section-shell">
+      <div class="section-kicker" data-i18n="introKicker">ONE PLATFORM. MANY POSSIBILITIES.</div>
+      <div class="intro-grid"><h2 data-i18n="introTitle">Make your student journey <em>count.</em></h2><p data-i18n="introCopy">UniWorld brings campus life and international education into one student-focused space. Start locally, think globally, and move forward with confidence.</p></div>
+    </section>
+
+    <section class="pillars section-shell" id="campus">
+      <div class="section-heading"><div><div class="section-kicker" data-i18n="campusKicker">01 / START HERE</div><h2 data-i18n="campusTitle">Your campus, <em>connected.</em></h2></div><p data-i18n="campusCopy">A growing space for student voices, ideas and activities.</p></div>
+      <article class="feature-card campus-card"><div class="feature-number">01</div><div class="feature-art art-campus"><span class="art-orbit"></span><span class="art-building">▥</span><span class="art-star">✳</span></div><div class="feature-text"><span class="tag" data-i18n="foundationTag">FOUNDATION</span><h3 data-i18n="campusCardTitle">Campus community</h3><p data-i18n="campusCardCopy">Share student projects, discover events and connect with people learning and building around you.</p><span class="status" data-i18n="pilotStatus">Pilot concept · Content being prepared</span></div></article>
+    </section>
+
+    <section class="discover-section section-shell" id="discover">
+      <div class="section-heading"><div><div class="section-kicker" data-i18n="discoverKicker">02 / LOOK BEYOND</div><h2 data-i18n="discoverTitle">The world is <em>within reach.</em></h2></div><p data-i18n="discoverCopy">Explore useful information before you make your next education decision.</p></div>
+      <div class="mini-grid">
+        <article class="mini-card"><span class="mini-icon">⌘</span><h3 data-i18n="universitiesTitle">Universities</h3><p data-i18n="universitiesCopy">Compare study destinations and explore university profiles.</p><span class="mini-link" data-i18n="comingSoon">Coming in stages ↗</span></article>
+        <article class="mini-card"><span class="mini-icon">✧</span><h3 data-i18n="scholarshipsTitle">Scholarships</h3><p data-i18n="scholarshipsCopy">Find funding opportunities and understand their requirements.</p><span class="mini-link" data-i18n="comingSoon">Coming in stages ↗</span></article>
+        <article class="mini-card"><span class="mini-icon">◷</span><h3 data-i18n="guidesTitle">Guides & deadlines</h3><p data-i18n="guidesCopy">Prepare documents and keep track of important application dates.</p><span class="mini-link" data-i18n="comingSoon">Coming in stages ↗</span></article>
+      </div>
+    </section>
+
+    <section class="opportunities-section section-shell" id="opportunities">
+      <div class="opportunity-panel"><div><div class="section-kicker" data-i18n="opportunitiesKicker">03 / TAKE YOUR NEXT STEP</div><h2 data-i18n="opportunitiesTitle">Small steps.<br><em>Big possibilities.</em></h2><p data-i18n="opportunitiesCopy">A dedicated space for exchange programmes, internships, competitions and student development opportunities.</p></div><div class="opportunity-stamp"><span>YOUR</span><b>NEXT<br>CHAPTER</b><span>STARTS HERE ↗</span></div></div>
+    </section>
+
+    <section class="guide-section section-shell" id="guide">
+      <div class="guide-card"><div class="guide-orb">✳</div><div class="guide-content"><div class="section-kicker" data-i18n="guideKicker">04 / YOUR STUDY COMPANION</div><h2 data-i18n="guideTitle">Meet UniWorld <em>Guide.</em></h2><p data-i18n="guideCopy">A future assistant designed to help you explore study paths, prepare applications and find relevant opportunities.</p><span class="prototype-label" data-i18n="guideStatus">Concept preview · AI service not connected yet</span></div><a class="button button-light" href="./assistant.html" data-i18n="guideExplore">Explore the platform ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="brand brand-footer" href="#home"><span class="brand-mark">U</span><span>UniWorld<span class="brand-dot">.</span></span></a><p data-i18n="footerCopy">Your Education. Your Opportunities. Your World.</p></div><div class="footer-bottom"><span>© <span id="year"></span> UniWorld</span><span data-i18n="footerNote">An independent student platform. Not an official university website.</span></div></footer>
+</body>
+</html>
