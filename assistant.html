@@ -1,1 +1,52 @@
-<!doctype html><html lang="kaa"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UniWorld Guide | UniWorld</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="./styles/home-v2.css"><link rel="stylesheet" href="./styles/modules-v2.css"><script src="./js/modules-v2.js" defer></script></head><body><header class="site-header"><div class="nav-wrap"><a class="brand" href="./index-v2.html"><span class="brand-mark">U</span><span>UniWorld<span class="brand-dot">.</span></span></a><button class="menu-toggle" aria-label="Menu">☰</button><nav class="main-nav"><a href="./campus.html">Campus</a><a href="./discover.html">Discover</a><a href="./opportunities.html">Opportunities</a><a href="./assistant.html">AI Assistant</a><a href="./profile.html">Profile</a></nav><label class="language-picker"><select id="languageSelect" aria-label="Language"><option value="kaa">Qaraqalpaqsha</option><option value="uz">O‘zbekcha</option><option value="en">English</option><option value="ru">Русский</option></select></label></div></header><main class="subpage"><section class="page-hero"><div class="eyebrow">UNIWORLD / UNIWORLD GUIDE</div><h1>UniWorld Guide</h1><p>A future study companion to help students explore study paths, prepare applications and find relevant opportunities.</p></section><section class="form-panel"><div class="meta">GUIDANCE CONCEPT</div><h2 style="font-family:Manrope;margin:10px 0">What would you like help with?</h2><label for="guideTopic">Choose a topic</label><select id="guideTopic" class="field"><option>Study abroad planning</option><option>Scholarship search</option><option>Motivation letter and CV</option><option>University comparison</option><option>Student project development</option></select><label for="guideQuestion">Your question</label><textarea id="guideQuestion" class="field" placeholder="Describe what you want to achieve..."></textarea><button type="button" id="guideSubmit">Prepare my question</button><p id="guideFeedback" class="empty-note" aria-live="polite">This prototype does not send your question to an AI service. It helps structure the request; live AI requires a secure backend and API integration.</p></section></main><footer class="site-footer"><div class="footer-top"><a class="brand brand-footer" href="./index-v2.html"><span class="brand-mark">U</span><span>UniWorld<span class="brand-dot">.</span></span></a><p>Your Education. Your Opportunities. Your World.</p></div><div class="footer-bottom"><span>© <span data-year></span> UniWorld</span><span>Independent student platform · Concept preview</span></div></footer></body></html>
+<!doctype html>
+<html lang="kaa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A concept for helping students explore study paths and prepare applications." data-i18n-content="metaGuide">
+  <title data-i18n="titleGuide">UniWorld Guide | UniWorld</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/home-v2.css">
+  <link rel="stylesheet" href="./styles/modules-v2.css">
+  <script src="./js/modules-v2.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="nav-wrap">
+    <a class="brand" href="./index-v2.html" aria-label="UniWorld home"><span class="brand-mark">U</span><span>UniWorld<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" data-i18n-aria="menuLabel"><span aria-hidden="true">☰</span></button>
+    <nav class="main-nav" aria-label="Main navigation" data-i18n-aria="mainNavLabel">
+      <a href="./campus.html" data-i18n="navCampus">Campus</a><a href="./discover.html" data-i18n="navDiscover">Discover</a><a href="./opportunities.html" data-i18n="navOpportunities">Opportunities</a><a href="./assistant.html" aria-current="page" data-i18n="navGuide">AI Assistant</a><a href="./profile.html" data-i18n="navProfile">Profile</a>
+    </nav>
+    <label class="language-picker"><span class="sr-only" data-i18n="languageLabel">Language</span><select id="languageSelect" aria-label="Language"><option value="kaa">Qaraqalpaqsha</option><option value="uz">O‘zbekcha</option><option value="en">English</option><option value="ru">Русский</option></select></label>
+  </div></header>
+
+  <main class="subpage">
+    <section class="page-hero"><div class="eyebrow" data-i18n="guideEyebrow">UNIWORLD / GUIDE</div><h1 data-i18n="guideTitle">UniWorld Guide</h1><p data-i18n="guideIntro">A student companion designed to help explore study paths, prepare applications and find relevant opportunities.</p></section>
+    <section class="form-panel">
+      <div class="meta" data-i18n="guideMeta">GUIDANCE CONCEPT</div>
+      <h2 data-i18n="guideFormTitle" style="font-family:Manrope;margin:10px 0">What would you like help with?</h2>
+      <form id="guideForm">
+        <label for="guideTopic" data-i18n="guideTopicLabel">Choose a topic</label>
+        <select id="guideTopic" class="field">
+          <option value="study" data-i18n="topicStudy">Planning to study abroad</option>
+          <option value="scholarship" data-i18n="topicScholarship">Finding scholarships</option>
+          <option value="documents" data-i18n="topicDocuments">Motivation letter and CV</option>
+          <option value="university" data-i18n="topicUniversity">Comparing universities</option>
+          <option value="project" data-i18n="topicProject">Developing a student project</option>
+        </select>
+        <label for="guideQuestion" data-i18n="guideQuestionLabel">Your question</label>
+        <textarea id="guideQuestion" class="field" rows="5" data-i18n-placeholder="guideQuestionPlaceholder" placeholder="Describe your goal and question..."></textarea>
+        <button type="submit" id="guideSubmit" data-i18n="guideSubmit">Prepare my question</button>
+      </form>
+      <p id="guideFeedback" class="empty-note" aria-live="polite" data-i18n="guideInitialFeedback">This prototype does not send your question to an AI service. It only helps structure the request; live AI will require a secure backend.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand brand-footer" href="./index-v2.html"><span class="brand-mark">U</span><span>UniWorld<span class="brand-dot">.</span></span></a><p data-i18n="footerTagline">Your Education. Your Opportunities. Your World.</p></div>
+    <div class="footer-bottom"><span>© <span data-year></span> UniWorld</span><span data-i18n="footerNote">An independent student platform. Not an official university website.</span></div>
+  </footer>
+</body>
+</html>
