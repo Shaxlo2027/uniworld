@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="kaa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A community space for student life, projects and campus events." data-i18n-content="metaCampus">
+  <title data-i18n="titleCampus">Campus | UniWorld</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/home-v2.css">
+  <link rel="stylesheet" href="./styles/modules-v2.css">
+  <script src="./js/modules-v2.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="./index-v2.html" aria-label="UniWorld home"><span class="brand-mark">U</span><span>UniWorld<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" data-i18n-aria="menuLabel"><span aria-hidden="true">☰</span></button>
+      <nav class="main-nav" aria-label="Main navigation" data-i18n-aria="mainNavLabel">
+        <a href="./campus.html" aria-current="page" data-i18n="navCampus">Campus</a>
+        <a href="./discover.html" data-i18n="navDiscover">Discover</a>
+        <a href="./opportunities.html" data-i18n="navOpportunities">Opportunities</a>
+        <a href="./assistant.html" data-i18n="navGuide">AI Assistant</a>
+        <a href="./profile.html" data-i18n="navProfile">Profile</a>
+      </nav>
+      <label class="language-picker"><span class="sr-only" data-i18n="languageLabel">Language</span>
+        <select id="languageSelect" aria-label="Language">
+          <option value="kaa">Qaraqalpaqsha</option><option value="uz">O‘zbekcha</option><option value="en">English</option><option value="ru">Русский</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="page-hero">
+      <div class="eyebrow" data-i18n="campusEyebrow">UNIWORLD / CAMPUS</div>
+      <h1 data-i18n="campusTitle">Campus</h1>
+      <p data-i18n="campusIntro">A student community space for campus life, student projects, events and collaboration.</p>
+    </section>
+
+    <div class="toolbar" aria-label="Campus filters">
+      <label><span data-i18n="campusSearchLabel">Search</span>
+        <input id="campusSearch" type="search" data-i18n-placeholder="campusSearchPlaceholder" placeholder="Search projects, events or community">
+      </label>
+      <label><span data-i18n="campusCategoryLabel">Category</span>
+        <select id="campusType">
+          <option value="all" data-i18n="catAll">All categories</option>
+          <option value="projects" data-i18n="catProjects">Projects</option>
+          <option value="events" data-i18n="catEvents">Events</option>
+          <option value="community" data-i18n="catCommunity">Community</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="content-grid" id="campusCards">
+      <article class="content-card" data-campus-card data-category="projects">
+        <span class="symbol" aria-hidden="true">✦</span>
+        <div class="meta" data-i18n="campusProjectsMeta">STUDENT PROJECTS</div>
+        <h2 data-i18n="campusProjectsTitle">Student projects</h2>
+        <p data-i18n="campusProjectsCopy">A showcase for student-built ideas, research and creative work. Submissions will be reviewed before publication.</p>
+      </article>
+      <article class="content-card" data-campus-card data-category="events">
+        <span class="symbol" aria-hidden="true">◷</span>
+        <div class="meta" data-i18n="campusEventsMeta">CAMPUS EVENTS</div>
+        <h2 data-i18n="campusEventsTitle">Events and activities</h2>
+        <p data-i18n="campusEventsCopy">Academic events, workshops, meetups and student activities shared by verified organizers.</p>
+      </article>
+      <article class="content-card" data-campus-card data-category="community">
+        <span class="symbol" aria-hidden="true">◎</span>
+        <div class="meta" data-i18n="campusCommunityMeta">STUDENT COMMUNITY</div>
+        <h2 data-i18n="campusCommunityTitle">Meet your community</h2>
+        <p data-i18n="campusCommunityCopy">Find peers, student teams and collaborators. Profiles and contact features will be added after secure accounts are introduced.</p>
+      </article>
+    </div>
+
+    <p id="campusNoResults" class="empty-note" aria-live="polite" hidden data-i18n="campusNoResults">No sections match your search. Try another keyword.</p>
+    <p class="empty-note" data-i18n="campusNote">This is the Campus foundation preview. No real student posts or event listings have been published yet. Posting, comments, accounts and moderation will be enabled after the backend is ready.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand brand-footer" href="./index-v2.html"><span class="brand-mark">U</span><span>UniWorld<span class="brand-dot">.</span></span></a><p data-i18n="footerTagline">Your Education. Your Opportunities. Your World.</p></div>
+    <div class="footer-bottom"><span>© <span data-year></span> UniWorld</span><span data-i18n="footerNote">An independent student platform. Not an official university website.</span></div>
+  </footer>
+</body>
+</html>
