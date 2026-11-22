@@ -24,7 +24,7 @@ const translations = {
     discoverFundingCopy: "Qarjılandırıw imkaniyatların, qatnasıw talapların, qamtıw dárejesin hám tapsırıw múddetlerin úyreniń.",
     discoverGuidesMeta: "STUDENTLER USHIN QOLLANBALAR", discoverGuidesTitle: "Arza tapsırıw qollanbaları",
     discoverGuidesCopy: "Transkript, til sertifikatı, usınıs xatı, motivaciyalıq xat hám arza basqıshların túsiniń.",
-    discoverNote: "Bul bólimde oydan shıǵarılǵan universitetler, grantlar yamasa sá neler joq. Hár bir maǵlıwmat járiyalanıwdan aldın rásmiy derek boyınsha tekseriledi.",
+    discoverNote: "Bul bólimde oydan shıǵarılǵan universitetler, grantlar yamasa sáneler joq. Hár bir maǵlıwmat járiyalanıwdan aldın rásmiy derek boyınsha tekseriledi.",
     titleOpportunities: "Imkaniyatlar | UniWorld", metaOpportunities: "Studentler ushın almasıw, stajirovka, konkurs hám rawajlanıw imkaniyatları.",
     opportunitiesEyebrow: "UNIWORLD / IMKANIYATLAR", opportunitiesTitle: "Keyingi qádemińiz", opportunitiesIntro: "Almasıw programmaları, stajirovkalar, konkurslar, erikti jumıs hám studentlerdi rawajlandırıw imkaniyatları ushın arnawlı bólim.",
     exchangeMeta: "XALIQARALIQ ALMASIW", exchangeTitle: "Almasıw programmaları", exchangeCopy: "Bir semestrlik oqıw, jazǵı mektepler hám xalıqaralıq akademiyalıq mobililik programmaları.",
